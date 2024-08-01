@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:mobileapp/const.dart';
@@ -37,6 +33,7 @@ final AsyncSnapshot snapshot ;
                   filterQuality: FilterQuality.high,
                   fit: BoxFit.cover,
                   '${Const.imagepath}${snapshot.data[itemIndex].posterPath
+
                   }'
                 ),
                 
