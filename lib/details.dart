@@ -61,6 +61,7 @@ class Details extends StatelessWidget {
             SizedBox(height: 20,),
              SizedBox(
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(8),
@@ -92,7 +93,18 @@ class Details extends StatelessWidget {
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.white
-                  ),),)
+                  ), borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Row(children: [
+                      Text('Rating : ', style: GoogleFonts.belleza(
+              fontSize: 20,
+              fontWeight: FontWeight.w800
+            ) ,
+            
+            ),
+            Text('${movie.voteAverage.toStringAsFixed(1)}/10'),
+             ])
+                  )
                 ],
 
               ),
